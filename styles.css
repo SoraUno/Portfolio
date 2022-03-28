@@ -1,58 +1,60 @@
 @charset "utf-8";
 
 .portfolio_p {
-    animation: color-change 1s linear both;
+  animation: color-change 1s linear both;
 }
 
 @keyframes color-change {
-    100% {
-        color: #ff1493;
-    }
+  100% {
+    color: #ff1493;
+  }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 body {
-    font-family: "Noto Sans JP", sans-serif;
-    color: #333333;
+  font-family: "Murecho", sans-serif;
+  color: #333333;
 }
 .snip1226 * {
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 .snip1226 li {
-    display: inline-block;
-    list-style: outside none none;
-    overflow: hidden;
+  display: inline-block;
+  list-style: outside none none;
+  overflow: hidden;
 }
 .snip1226 a {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  text-decoration: none;
 }
 .snip1226 a:before,
 .snip1226 a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 .snip1226 a:before {
-    bottom: 100%;
-    display: block;
-    height: 2px;
-    width: 100%;
-    content: "";
-    background-color: #000000;
+  bottom: 100%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: #1a202c;
 }
 .snip1226 a:after {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    content: attr(data-hover);
-    white-space: nowrap;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  white-space: nowrap;
 }
 .snip1226 li:hover a,
 .snip1226 .current a {
-    transform: translateY(100%);
+  transform: translateY(100%);
+}
+.shadow {
+  box-shadow: 6px 6px#1a202c;
 }

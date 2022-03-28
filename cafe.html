@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇野そら | HAL TOKYO WEB学科 3年 [作品詳細]</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    <script src="./profile.js"></script>
+</head>
+
+<body>
+    <div x-data="ViewData" class="text-gray-900">
+
+        <div class="h-28 w-full bg-white bg-opacity-95 fixed z-10">
+            <p class="lg:pl-0 sm:pl-0 fixed top-12 left-28 text-sm font-semibold z-20">ー Webサイトデザイン+コーディング</p>
+            <ul class="snip1226 flex  pb-16 fixed top-12 right-28">
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a
+                        href="https://sorauno.github.io/French-restaurant-site/"
+                        data-hover="この作品のサイトへ移動">この作品のサイトへ移動</a></li>
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a href="works.html"
+                        data-hover="作品一覧に戻る">作品一覧に戻る</a></li>
+            </ul>
+        </div>
+
+        <div class="lg:py-12 lg:px-28 md:py-20 md:px-32 py-8 px-8">
+            <section class="pt-36 pb-36 z-0">
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h2 x-text="subtitle" class="text-xl font-semibold pb-24 tracking-widest"></h2>
+                        <h1 class="text-5xl pb-24 font-extrabold">Webサイトデザイン<br>
+                            +コーディング</h1>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 w-24">
+                                    <h3 class="text-center font-medium">使用ツール</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">AdobeXD</p>
+                            </div>
+                            <div class="flex">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24">
+                                    <h3 class="text-center font-medium">製作期間</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">1週間と5日</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">使用言語</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">HTML<br>CSS</p>
+                            </div>
+                            <div class="flex">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">担当箇所</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">リサーチ<br>
+                                    デザインカンプ作成<br>
+                                    コーディング</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <img :src="img" class="object-cover">
+                    </div>
+                </div>
+            </section>
+            <section class="rounded-2xl border-4 border-gray-600 border-solid text-center py-10">
+                <h1 class="text-lg font-bold mb-3">制作背景</h1>
+                <p class="leading-8 font-light">HAL3校合同コンテストにて、「高級フレンチレストランのトップページを作成する」といった課題が課されたため。<br>
+                    また、グリッドレイアウトの演習のため。</p>
+            </section>
+            <section class="py-36">
+                <h1 class="text-xl font-semibold mb-6">制作における課題</h1>
+                <ul class="leading-8">
+                    <li>・高級フレンチレストラン Grande Maison La BaieのWebサイトの作成</li>
+                    <li>・グリッドレイアウトを使用する。（グリッドレイアウトの演習も兼ねているため必須）</li>
+                    <li>・提示されたクライアントからの制作依頼に沿ったデザインをする。</li>
+                    <h1 class="text-xl font-semibold mt-24 mb-6">依頼内容</h1>
+                    <li>・お店の雰囲気とイメージ、また食事へのこだわりを伝えることのできるトップページが欲しい</li>
+                    <li>・サイトの目的→お店の紹介</li>
+                    <li>・平均使用金額→10,000円 ※ベーシックな金額</li>
+                    <li>・サイトのイメージ→高貴で洗練されたイメージ</li><br>
+                    <li>【掲載希望内容は以下の通り】<br>
+                        　「お店の特徴やコンセプト」<br>
+                        　「インフォメーション(営業時間・営業日・電話など)」<br>
+                        　「ブログ(最近のエントリー簡易紹介)」<br>
+                        　「予約・問い合わせ」<br>
+                        　「様々なシーンでのご利用について」</li>
+                </ul>
+            </section>
+            <section>
+                <h1 class="text-xl font-semibold mb-6">課題解決のためのリサーチ</h1>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">①リサーチ</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3">・依頼書を熟読</li>
+                            <li class="mb-3">・イメージを掴むためにフランス料理店のサイトを調査（本場フランスのフランス料理店HPも閲覧）</li>
+                            <li class="mb-3">・同価格帯のレストランのサイトを調査</li>
+                            <li class="mb-3">・高級感のあるサイトを調査</li>
+                            <li class="mb-3">・グリッドレイアウトのWebデザインにおける使用例を調査</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">②リサーチをもとに分析</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3">・高級感を出すために余白を取り余裕を表現すると良い</li>
+                            <li class="mb-3">・カラーは暗く重厚感のあるもの、もしくは白に近いものが良い</li>
+                            <li class="mb-3">・フォントは強弱のあるセリフ体や明朝体を使用すると良い</li>
+                            <li class="mb-3">・メニューはコース料理であることが多い</li>
+                            <li class="mb-3">・グリッドレイアウトは同等の情報を複数並べるのに向いている</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">③行動</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3">・ファーストビューは料理を背景にナビゲーションとロゴのみというシンプルなデザインにした</li>
+                            <li class="mb-3">・バックグラウンドカラーは高級感もありつつ、あたたかみのあるカラーを使用</li>
+                            <li class="mb-3">・全体的に余白を広めにとる</li>
+                            <li class="mb-3">・建物紹介にて一目で多くの情報を届けるためにグリッドレイアウトを使用</li>
+                            <li class="mb-3">・コースメニューは大きめのグリッドレイアウトを使用</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="">
+                <img src="images/136_arr_24.png" class="my-12 mx-auto transform rotate-90 h-16" alt="矢印">
+            </div>
+            <section class="grid grid-cols-2 gap-20 pb-48">
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー コンセプト ー</h1>
+                    <p class="text-3xl">お店でゆったりと過ごすイメージと<br>
+                        高級感が伝わるデザイン</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー ターゲット ー</h1>
+                    <p class="text-3xl">お金に余裕のある<br>
+                        20代後半〜40代の会社員</p>
+                </div>
+            </section>
+            <section class="mb-40">
+                <div
+                    class="rounded-full border-gray-900 border-solid border text-sm py-3 mr-2 mb-12 font-semibold w-44">
+                    <h3 class="text-center font-semibold text-xl">作品の工夫点</h3>
+                </div>
+                <div class="px-24">
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/french_restaurant.jpg" class="object-cover w-full " alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">①ファーストビューで余裕を表現</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・ナビゲーション+ロゴのみのシンプルなデザインで余裕（流れる時間のゆったりさや店内の雰囲気）を表現</li>
+                                <li class="mb-1">・レストランであり、食事へのこだわりを伝えたいため、背景写真は料理を使用</li>
+                                <li class="mb-1">・ナビゲーションは内側に小さくキュッとまとめることで食事や建物の繊細さをイメージさせるようにしている</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-left">②テキスト</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・フォントは強弱のある明朝体を使用し高級感を表現</li>
+                                <li class="mb-1">・テキストのジャンプ率に気を配り、メリハリのあるデザインを心がけた</li>
+                                <li class="mb-1">・見出しの文字間隔を広めに取り、余裕を表現</li>
+                            </ul>
+                        </div>
+                        <img src="images/image_labaie_2.png" class="object-cover w-full " alt="写真">
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/image_labaie_1.png" class="object-cover w-full " alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">③コンテンツの優先順位を意識</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・店の雰囲気と食事へのこだわりを伝えることが最優先であると常に意識</li>
+                                <li class="mb-1">・コース料理紹介では実際のメニューを意識したレイアウトを使用</li>
+                                <li class="mb-1">・店内の雰囲気は最初での紹介だけでなく、コンテンツの合間にも店内の写真を配置しユーザーが無意識のうちに伝わるよう工夫した</li>
+                                <li class="mb-1">・店舗が横浜山手にあることを伝えるため、横浜山手らしい写真をフッターに配置</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-left">④シーン別のご利用案内</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・大事なシーンでのご利用で素敵な体験をお届けしたいという想いを伝えるため、リボンのかかったプレゼントをイメージしたデザインにした</li>
+                                <li class="mb-1">・それぞれリンクにして詳細は別ページに飛ばすことで、トップページ全体の情報量を減らし、さらに重要な情報が霞まないようにデザインした</li>
+                            </ul>
+                        </div>
+                        <img src="images/image_labaie_3.png" class="object-cover w-full " alt="写真">
+                    </div>
+                    <div class="grid grid-cols-2 gap-24">
+                        <img src="images/image_labaie_4.png" class="object-contain w-48" alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">⑤レスポンシブ対応</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・PC、スマートフォン、タブレットの3つに対応させた</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24 mb-48">
+                <div>
+                    <div
+                        class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">良かった点</h3>
+                    </div>
+                    <ul class="leading-7 text-lg text-left">
+                        <li class="mb-1">・2週間弱といった厳しいスケジュールの中、完成度をここまで高められたこと</li>
+                        <li class="mb-1">・HAL3校合同コンテストにて独創力賞を受賞することができたこと</li>
+                        <li class="mb-1">・リサーチ結果を作品に反映し、活かすことができたこと</li>
+                    </ul>
+                </div>
+                <div>
+                    <div
+                        class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">反省点</h3>
+                    </div>
+                    <ul class="leading-7 text-lg text-left">
+                        <li class="mb-2">・-Corse-、-Blog-などの見出しがコンテンツの上につくのか下につくのか分かりづらかったため、見出しの上余白をもう少し開けると良かった</li>
+                        <li class="mb-2">・ナビゲーションやシーン別利用案内のリンクなどにホバーアニメーションをつけるとよかった</li>
+                        <li class="mb-2">・全体的に遊び心のあるアニメーションを少し付けたら良かった</li>
+                        <li class="mb-2">・スマートフォンやタブレットの際に一部レイアウトが崩れてしまうところがある（時間が足りなかった）</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24">
+                <a href="https://sorauno.github.io/French-restaurant-site/"
+                    class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">この作品のサイトへ移動</h3>
+                </a>
+                <a href="works.html"
+                    class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">作品一覧に戻る</h3>
+                </a>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <footer class="pb-24 font-thin w-full text-center"><small>&copy;2022 SoraUno</small></footer>
+</body>
+
+</html>

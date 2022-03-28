@@ -51,12 +51,14 @@ Alpine.data("WorksData", () => ({
     {
       title: "Café de Paris　カフェサイトデザイン",
       img: "./images/cafe.jpg",
-      url: "https://sorauno.github.io/cafe_site/",
+      // url: "https://sorauno.github.io/cafe_site/",
+      url: "cafe.html",
     },
     {
       title: "高級フランス料理店サイトデザイン",
       img: "./images/french_restaurant.jpg",
-      url: "https://sorauno.github.io/French-restaurant-site/",
+      // url: "https://sorauno.github.io/French-restaurant-site/",
+      url: "labaie.html",
     },
     {
       title: "鵠沼海岸　紹介サイトデザイン",
@@ -175,4 +177,17 @@ Alpine.data("SkillsData", () => ({
     },
 
   ],
+}));
+
+Alpine.data("ViewData", () => ({
+  // viewList: [
+  //   {
+      id: 1,
+      subtitle: "高級フレンチレストラン Grande Maison La Baie",
+      title: "Webサイトデザイン+コーディング",
+      img: "./images/french_restaurant.jpg",
+      url: "https://sorauno.github.io/cafe_site/",
+  //   },
+
+  // ],
 }));

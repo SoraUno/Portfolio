@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇野そら | HAL TOKYO WEB学科 3年 [作品詳細]</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    <script src="./profile.js"></script>
+</head>
+<body>
+    <div x-data="ViewData" class="text-gray-900">
+
+        <div class="h-28 w-full bg-white bg-opacity-95 fixed z-10">
+            <p class="lg:pl-0 sm:pl-0 fixed top-12 left-28 text-sm font-semibold z-20">ー WEBサイトデザイン</p>
+            <ul class="snip1226 flex  pb-16 fixed top-12 right-28">
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a href="https://sorauno.github.io/French-restaurant-site/" data-hover="この作品のサイトへ移動">この作品のサイトへ移動</a></li>
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a href="works.html" data-hover="作品一覧に戻る">作品一覧に戻る</a></li>
+            </ul>
+        </div>
+
+        <div class="lg:py-12 lg:px-28 md:py-20 md:px-32 py-8 px-8">
+            <section class="pt-36 pb-36 z-0">
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h2 x-text="subtitle" class="text-xl font-semibold pb-24 tracking-widest"></h2>
+                        <h1 x-text="title" class="text-5xl pb-24 font-extrabold"></h1>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 w-24">
+                                    <h3 class="text-center font-medium">使用ツール</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">AdobeXD</p>
+                            </div>
+                            <div class="flex">
+                                <div class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24">
+                                    <h3 class="text-center font-medium">製作期間</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">１ヶ月</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">使用言語</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">HTML<br>CSS</p>
+                            </div>
+                            <div class="flex">
+                                <div class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">担当箇所</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">デザイン<br>コーディング</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <img :src="img" class="object-cover">
+                    </div>
+                </div> 
+            </section>
+            <section class="rounded-2xl border-4 border-gray-600 border-solid text-center py-10">
+                <h1 class="text-lg font-bold mb-3">制作背景</h1>
+                <p class="leading-8 font-light">高級フレンチGrande Maison La Baieのお店の雰囲気とイメージ、<br>
+                食事へのこだわりを伝えるサイトの作成依頼を想定（クライアントからの依頼内容）</p>
+            </section>
+            <section class="py-36">
+                <h1 class="text-xl font-semibold mb-6">制作における課題</h1>
+                <ul class="leading-8 font-light">
+                    <li>・授業内課題の内容として、グリッドレイアウトを使用する必要がある。</li>
+                    <li>・授業内課題の内容として、グリッドレイアウトを使用する必要がある。</li>
+                    <li>・授業内課題の内容として、グリッドレイアウトを使用する必要がある。</li>
+                </ul>
+            </section>
+            <section>
+                <h1 class="text-xl font-semibold mb-6">課題解決のためのリサーチ</h1>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-4 font-semibold">①リサーチ</h1>
+                        <ul class="leading-7 font-light text-sm text-left">
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-4 font-semibold">②リサーチをもとに分析</h1>
+                        <ul class="leading-7 font-light text-sm text-left">
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-4 font-semibold">③行動</h1>
+                        <ul class="leading-7 font-light text-sm text-left">
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                            <li>・グリッドレイアウトを使用する必要がある。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="">
+                <img src="images/136_arr_24.png" class="my-12 mx-auto transform rotate-90 h-16" alt="矢印">
+            </div>
+            <section class="grid grid-cols-2 gap-20 pb-48">
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー コンセプト ー</h1>
+                    <p class="text-3xl">お店でゆったりと過ごすイメージと
+                        高級感が伝わるデザイン</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー ターゲット ー</h1>
+                    <p class="text-3xl">20代後半~40代の男女（働き盛り）</p>
+                </div>
+            </section>
+            <section class="mb-40">
+                <div class="rounded-full border-gray-900 border-solid border text-sm py-3 mr-2 mb-12 font-semibold w-44">
+                    <h3 class="text-center font-semibold text-xl">作品の工夫点</h3>
+                </div>
+                <div class="px-24">
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/cafe.jpg" class="object-cover w-full " alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">①フォント</h1>
+                            <ul class="leading-7 font-semibold text-lg text-left leading-8">
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-right">①フォント</h1>
+                            <ul class="leading-7 font-semibold text-lg text-right leading-8">
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                            </ul>
+                        </div>
+                        <img src="images/cafe.jpg" class="object-cover w-full " alt="写真">
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/cafe.jpg" class="object-cover w-full " alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">①フォント</h1>
+                            <ul class="leading-7 font-semibold text-lg text-left leading-8">
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-right">①フォント</h1>
+                            <ul class="leading-7 font-semibold text-lg text-right leading-8">
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                                <li>・グリッドレイアウトを使用する必要がある。</li>
+                            </ul>
+                        </div>
+                        <img src="images/cafe.jpg" class="object-cover w-full " alt="写真">
+                    </div>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24 mb-48">
+                <div>
+                    <div class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">作品の工夫点</h3>
+                    </div>
+                    <ul class="leading-7 font-light text-lg text-left">
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">作品の工夫点</h3>
+                    </div>
+                    <ul class="leading-7 font-light text-lg text-left">
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                        <li>・グリッドレイアウトを使用する必要がある。</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24">
+                <a href="https://sorauno.github.io/French-restaurant-site/" class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">この作品のサイトへ移動</h3>
+                </a>
+                <a href="works.html" class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">作品一覧に戻る</h3>
+                </a>
+            </section>
+        </div>
+    </div>
+    
+    
+    
+    
+    <footer class="pb-24 font-thin w-full text-center"><small>&copy;2022 SoraUno</small></footer>
+</body>
+</html>
