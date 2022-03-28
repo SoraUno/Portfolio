@@ -52,13 +52,13 @@ Alpine.data("WorksData", () => ({
       title: "Café de Paris　カフェサイトデザイン",
       img: "./images/cafe.jpg",
       // url: "https://sorauno.github.io/cafe_site/",
-      url: "cafe.html",
+      url: "https://sorauno.github.io/Portfolio/cafe.html",
     },
     {
       title: "高級フランス料理店サイトデザイン",
       img: "./images/french_restaurant.jpg",
       // url: "https://sorauno.github.io/French-restaurant-site/",
-      url: "labaie.html",
+      url: "https://sorauno.github.io/Portfolio/labaie.html",
     },
     {
       title: "鵠沼海岸　紹介サイトデザイン",
