@@ -26,7 +26,7 @@
             <p class="lg:pl-0 sm:pl-0 fixed top-12 left-28 text-sm font-semibold z-20">ー Webサイトデザイン+コーディング</p>
             <ul class="snip1226 flex  pb-16 fixed top-12 right-28">
                 <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a
-                        href="https://sorauno.github.io/French-restaurant-site/"
+                        href="https://sorauno.github.io/cafe_site/"
                         data-hover="この作品のサイトへ移動">この作品のサイトへ移動</a></li>
                 <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a href="works.html"
                         data-hover="作品一覧に戻る">作品一覧に戻る</a></li>
@@ -37,8 +37,8 @@
             <section class="pt-36 pb-36 z-0">
                 <div class="grid grid-cols-2">
                     <div>
-                        <h2 x-text="subtitle" class="text-xl font-semibold pb-24 tracking-widest"></h2>
-                        <h1 class="text-5xl pb-24 font-extrabold">Webサイトデザイン<br>
+                        <h2 class="text-xl font-semibold pb-24 tracking-widest">フレンチカフェ　Café de Paris</h2>
+                        <h1 class="text-5xl pb-24 font-extrabold">WEBサイトデザイン<br>
                             +コーディング</h1>
                         <div class="flex">
                             <div class="flex w-2/5">
@@ -53,7 +53,7 @@
                                     class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24">
                                     <h3 class="text-center font-medium">製作期間</h3>
                                 </div>
-                                <p x-text="" class="text-sm font-light py-1 leading-6">1週間と5日</p>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">2週間</p>
                             </div>
                         </div>
                         <div class="flex">
@@ -62,7 +62,7 @@
                                     class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
                                     <h3 class="text-center font-medium">使用言語</h3>
                                 </div>
-                                <p x-text="" class="text-sm font-light py-1 leading-6">HTML<br>CSS</p>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">HTML<br>CSS<br>JavaScript</p>
                             </div>
                             <div class="flex">
                                 <div
@@ -76,32 +76,31 @@
                         </div>
                     </div>
                     <div class="flex justify-end">
-                        <img :src="img" class="object-cover">
+                        <img src="images/cafe.jpg" class="object-cover">
                     </div>
                 </div>
             </section>
             <section class="rounded-2xl border-4 border-gray-600 border-solid text-center py-10">
                 <h1 class="text-lg font-bold mb-3">制作背景</h1>
-                <p class="leading-8 font-light">HAL3校合同コンテストにて、「高級フレンチレストランのトップページを作成する」といった課題が課されたため。<br>
-                    また、グリッドレイアウトの演習のため。</p>
+                <p class="leading-8 font-light">授業内課題にて、「フレンチカフェのトップページを作成する」といった課題が課されたため。</p>
             </section>
             <section class="py-36">
                 <h1 class="text-xl font-semibold mb-6">制作における課題</h1>
                 <ul class="leading-8">
-                    <li>・高級フレンチレストラン Grande Maison La BaieのWebサイトの作成</li>
-                    <li>・グリッドレイアウトを使用する。（グリッドレイアウトの演習も兼ねているため必須）</li>
+                    <li>・フレンチカフェ　Café de ParisのWebサイトの作成</li>
+                    <li>・配布されたロゴを使用し制作すること</li>
                     <li>・提示されたクライアントからの制作依頼に沿ったデザインをする。</li>
                     <h1 class="text-xl font-semibold mt-24 mb-6">依頼内容</h1>
-                    <li>・お店の雰囲気とイメージ、また食事へのこだわりを伝えることのできるトップページが欲しい</li>
+                    <li>・お店の雰囲気とイメージ、また食事の内容を伝えることのできるトップページが欲しい</li>
                     <li>・サイトの目的→お店の紹介</li>
-                    <li>・平均使用金額→10,000円 ※ベーシックな金額</li>
-                    <li>・サイトのイメージ→高貴で洗練されたイメージ</li><br>
+                    <li>・ターゲットユーザー→20代~30代の男女がメインターゲット</li>
+                    <li>・平均使用金額→1000円~1800円 ※ベーシックな金額</li>
+                    <li>・サイトのイメージ→おしゃれで明るく身近なイメージ</li><br>
                     <li>【掲載希望内容は以下の通り】<br>
-                        　「お店の特徴やコンセプト」<br>
-                        　「インフォメーション(営業時間・営業日・電話など)」<br>
-                        　「ブログ(最近のエントリー簡易紹介)」<br>
-                        　「予約・問い合わせ」<br>
-                        　「様々なシーンでのご利用について」</li>
+                        　「店舗の紹介」<br>
+                        　「メニュー紹介」<br>
+                        　「お店の所在・電話・FAX番号など」<br>
+                        　「ニュース」<br></li>
                 </ul>
             </section>
             <section>
@@ -111,30 +110,31 @@
                         <h1 class="mb-5 font-semibold">①リサーチ</h1>
                         <ul class="leading-6 text-left">
                             <li class="mb-3">・依頼書を熟読</li>
-                            <li class="mb-3">・イメージを掴むためにフランス料理店のサイトを調査（本場フランスのフランス料理店HPも閲覧）</li>
-                            <li class="mb-3">・同価格帯のレストランのサイトを調査</li>
-                            <li class="mb-3">・高級感のあるサイトを調査</li>
-                            <li class="mb-3">・グリッドレイアウトのWebデザインにおける使用例を調査</li>
+                            <li class="mb-3">・本場パリの雰囲気を調査</li>
+                            <li class="mb-3">・このサイトを経由して来店するまでの導線を考える</li>
+                            <li class="mb-3">・おしゃれで明るく身近なイメージとはどのようなものか調査</li>
                         </ul>
                     </div>
                     <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
                         <h1 class="mb-5 font-semibold">②リサーチをもとに分析</h1>
                         <ul class="leading-6 text-left">
-                            <li class="mb-3">・高級感を出すために余白を取り余裕を表現すると良い</li>
-                            <li class="mb-3">・カラーは暗く重厚感のあるもの、もしくは白に近いものが良い</li>
-                            <li class="mb-3">・フォントは強弱のあるセリフ体や明朝体を使用すると良い</li>
-                            <li class="mb-3">・メニューはコース料理であることが多い</li>
-                            <li class="mb-3">・グリッドレイアウトは同等の情報を複数並べるのに向いている</li>
+                            <li class="mb-3">・パリの景色から連想したイメージは、繊細で重厚、硬い石、整っている、窮屈だけど開放感。</li>
+                            <li class="mb-3">・想定する来店パターンは「検索→サイト訪問→サイト閲覧→来店」。この流れを作りたい。</li>
+                            <li class="mb-3">・場所が西新宿のため、買い物帰りにも寄ることができそう</li>
+                            <li class="mb-3">・おしゃれ→整っている＋大胆さor繊細さ</li>
+                            <li class="mb-3">・明るい→白、光、透明感、原色</li>
+                            <li class="mb-3">・身近→落ち着いた、笑顔、ナチュラル</li>
                         </ul>
                     </div>
                     <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
                         <h1 class="mb-5 font-semibold">③行動</h1>
                         <ul class="leading-6 text-left">
-                            <li class="mb-3">・ファーストビューは料理を背景にナビゲーションとロゴのみというシンプルなデザインにした</li>
-                            <li class="mb-3">・バックグラウンドカラーは高級感もありつつ、あたたかみのあるカラーを使用</li>
-                            <li class="mb-3">・全体的に余白を広めにとる</li>
-                            <li class="mb-3">・建物紹介にて一目で多くの情報を届けるためにグリッドレイアウトを使用</li>
-                            <li class="mb-3">・コースメニューは大きめのグリッドレイアウトを使用</li>
+                            <li class="mb-3">・パリ感を出すために、ロゴのトリコロールカラーを使用</li>
+                            <li class="mb-3">・重厚なイメージを太めのゴシック体で表現</li>
+                            <li class="mb-3">・窮屈だが開放感のあるイメージは画面の情報の多さ＋情報間の広めの余白で表現</li>
+                            <li class="mb-3">・おしゃれ感を出すために大胆なタイポグラフィと整ったレイアウトを併用</li>
+                            <li class="mb-3">・明るさは背景や文字色に白を、写真に自然光がよく射しているものを使用することで表現</li>
+                            <li class="mb-3">・身近さは背景や文字色にナチュラルなカラーを使用し、アイアンウッドを多用した店内の写真を複数掲載することで表現</li>
                         </ul>
                     </div>
                 </div>
@@ -145,13 +145,12 @@
             <section class="grid grid-cols-2 gap-20 pb-48">
                 <div class="text-center">
                     <h1 class="text-xl font-semibold mb-6">ー コンセプト ー</h1>
-                    <p class="text-3xl">お店でゆったりと過ごすイメージと<br>
-                        高級感が伝わるデザイン</p>
+                    <p class="text-3xl">本場パリを思わせる、おしゃれで<br>明るく身近なイメージのデザイン</p>
                 </div>
                 <div class="text-center">
                     <h1 class="text-xl font-semibold mb-6">ー ターゲット ー</h1>
-                    <p class="text-3xl">お金に余裕のある<br>
-                        20代後半〜40代の会社員</p>
+                    <p class="text-3xl">20〜30代の男女。<br>
+                        男女、女子同士などの二人組。</p>
                 </div>
             </section>
             <section class="mb-40">
@@ -161,23 +160,22 @@
                 </div>
                 <div class="px-24">
                     <div class="grid grid-cols-2 gap-24 mb-24">
-                        <img src="images/french_restaurant.jpg" class="object-cover w-full " alt="写真">
+                        <img src="images/cafe.jpg" class="object-cover w-full " alt="写真">
                         <div>
-                            <h1 class="text-xl font-semibold mb-10">①ファーストビューで余裕を表現</h1>
+                            <h1 class="text-xl font-semibold mb-10">①ファーストビューで明るくおしゃれなイメージを表現</h1>
                             <ul class="text-lg text-left leading-8">
-                                <li class="mb-1">・ナビゲーション+ロゴのみのシンプルなデザインで余裕（流れる時間のゆったりさや店内の雰囲気）を表現</li>
-                                <li class="mb-1">・レストランであり、食事へのこだわりを伝えたいため、背景写真は料理を使用</li>
-                                <li class="mb-1">・ナビゲーションは内側に小さくキュッとまとめることで食事や建物の繊細さをイメージさせるようにしている</li>
+                                <li class="mb-1">・大胆なタイポグラフィ＋アニメーションでおしゃれ感を演出</li>
+                                <li class="mb-1">・白を基調に原色を使用することで明るく元気で身近なイメージを演出</li>
+                                <li class="mb-1">・ロゴは主張の激しい配色のため小さめに配置</li>
                             </ul>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-24 mb-24">
                         <div>
-                            <h1 class="text-xl font-semibold mb-10 text-left">②テキスト</h1>
+                            <h1 class="text-xl font-semibold mb-10 text-left">②ホバーでお店の簡単な説明が見られるアニメーション</h1>
                             <ul class="text-lg text-left leading-8">
-                                <li class="mb-1">・フォントは強弱のある明朝体を使用し高級感を表現</li>
-                                <li class="mb-1">・テキストのジャンプ率に気を配り、メリハリのあるデザインを心がけた</li>
-                                <li class="mb-1">・見出しの文字間隔を広めに取り、余裕を表現</li>
+                                <li class="mb-1">・アニメーションを用いて遊び心あるデザインにすることで身近さを表現</li>
+                                <li class="mb-1">・サイト閲覧時のひと休みとしての役割もある</li>
                             </ul>
                         </div>
                         <img src="images/image_labaie_2.png" class="object-cover w-full " alt="写真">
@@ -185,12 +183,11 @@
                     <div class="grid grid-cols-2 gap-24 mb-24">
                         <img src="images/image_labaie_1.png" class="object-cover w-full " alt="写真">
                         <div>
-                            <h1 class="text-xl font-semibold mb-10">③コンテンツの優先順位を意識</h1>
+                            <h1 class="text-xl font-semibold mb-10">③豊富なメニュー量</h1>
                             <ul class="text-lg text-left leading-8">
-                                <li class="mb-1">・店の雰囲気と食事へのこだわりを伝えることが最優先であると常に意識</li>
-                                <li class="mb-1">・コース料理紹介では実際のメニューを意識したレイアウトを使用</li>
-                                <li class="mb-1">・店内の雰囲気は最初での紹介だけでなく、コンテンツの合間にも店内の写真を配置しユーザーが無意識のうちに伝わるよう工夫した</li>
-                                <li class="mb-1">・店舗が横浜山手にあることを伝えるため、横浜山手らしい写真をフッターに配置</li>
+                                <li class="mb-1">・お店情報のの透明性をもたせ、信頼感を抱いてもらうためにメニューは多めに掲載</li>
+                                <li class="mb-1">・メニューは見やすいようにおおよそカテゴリごとに並べている</li>
+                                <li class="mb-1">・写真は出来るだけ自然光で明るく写っているものを使用</li>
                             </ul>
                         </div>
                     </div>
@@ -241,7 +238,7 @@
                 </div>
             </section>
             <section class="px-24 grid grid-cols-2 gap-24">
-                <a href="https://sorauno.github.io/French-restaurant-site/"
+                <a href="https://sorauno.github.io/cafe_site/"
                     class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
                     <h3 class="text-center font-semibold text-3xl">この作品のサイトへ移動</h3>
                 </a>
