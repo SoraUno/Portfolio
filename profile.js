@@ -67,15 +67,15 @@ Alpine.data("WorksData", () => ({
       url: "https://sorauno.github.io/Portfolio/portfolio_view.html",
     },
     {
-      title: "鵠沼海岸　紹介サイトデザイン",
-      img: "./images/kugenuma.jpg",
-      url: "https://sorauno.github.io/hometown_introduction_site/",
-    },
-    {
       title: "アマチュア向け写真販売サイト",
       img: "./images/picto.jpg",
       // url: "https://sorauno.github.io/Photo_sales_site/",
       url: "https://drive.google.com/drive/folders/1f3yu66CalCz4EukxbkNI48h8uxCh6X7o",
+    },
+    {
+      title: "鵠沼海岸　紹介サイトデザイン",
+      img: "./images/kugenuma.jpg",
+      url: "https://sorauno.github.io/hometown_introduction_site/",
     },
   ],
 }));
