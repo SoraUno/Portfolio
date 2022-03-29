@@ -74,7 +74,8 @@ Alpine.data("WorksData", () => ({
     {
       title: "アマチュア向け写真販売サイト",
       img: "./images/picto.jpg",
-      url: "https://sorauno.github.io/Photo_sales_site/",
+      // url: "https://sorauno.github.io/Photo_sales_site/",
+      url: "https://drive.google.com/drive/folders/1f3yu66CalCz4EukxbkNI48h8uxCh6X7o",
     },
   ],
 }));
