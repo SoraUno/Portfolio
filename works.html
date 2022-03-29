@@ -32,7 +32,7 @@
             <div class="grid gap-8 lg:grid-cols-2">
                 <template x-for="item in worksList">
                     <a :href="item.url" class="text-center hover:opacity-75 transition duration-500">
-                        <img :src="item.img" class="mb-2">
+                        <img :src="item.img" class="mb-2 border-solid border border-gray-200">
                         <p class="font-thin text-sm" x-text="item.title"></p>
                     </a>
                 </template>

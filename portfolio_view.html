@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宇野そら | HAL TOKYO WEB学科 3年 [作品詳細]</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/alpinejs"></script>
+    <script src="./profile.js"></script>
+</head>
+
+<body>
+    <div x-data="ViewData" class="text-gray-900">
+
+        <div class="h-28 w-full bg-white bg-opacity-95 fixed z-10">
+            <p class="lg:pl-0 sm:pl-0 fixed top-12 left-28 text-sm font-semibold z-20">ー Webサイトデザイン+コーディング</p>
+            <ul class="snip1226 flex  pb-16 fixed top-12 right-28">
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a
+                        href="https://sorauno.github.io/cafe_site/"
+                        data-hover="この作品のサイトへ移動">この作品のサイトへ移動</a></li>
+                <li class="lg:ml-12 sm:ml-10 ml-4 text-sm font-semibold"><a href="works.html"
+                        data-hover="作品一覧に戻る">作品一覧に戻る</a></li>
+            </ul>
+        </div>
+
+        <div class="lg:py-12 lg:px-28 md:py-20 md:px-32 py-8 px-8">
+            <section class="pt-36 pb-36 z-0">
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h2 class="text-xl font-semibold pb-24 tracking-widest">ポートフォリオサイト</h2>
+                        <h1 class="text-5xl pb-24 font-extrabold">WEBサイトデザイン<br>
+                            +コーディング</h1>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 w-24 h-8">
+                                    <h3 class="text-center font-medium">使用ツール</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">AdobeXD</p>
+                            </div>
+                            <div class="flex">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">製作期間</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">
+                                    3週間（当作品詳細ページ以外）<br>
+                                    ＋2週間（当作品詳細ページ）
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex w-2/5">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">使用言語</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">HTML<br>CSS<br>JavaScript<br>Alpine.js<br>tailwindcss</p>
+                            </div>
+                            <div class="flex">
+                                <div
+                                    class="rounded-full border-gray-900 border-solid border text-sm py-1 mr-2 mb-5 font-semibold w-24 h-8">
+                                    <h3 class="text-center font-medium">担当箇所</h3>
+                                </div>
+                                <p x-text="" class="text-sm font-light py-1 leading-6">リサーチ<br>
+                                    デザインカンプ作成<br>
+                                    コーディング</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="images/portfolio.jpg" class="object-cover border-solid border border-gray-200">
+                    </div>
+                </div>
+            </section>
+            <section class="rounded-2xl border-4 border-gray-600 border-solid text-center py-10">
+                <h1 class="text-lg font-bold mb-3">制作背景</h1>
+                <p class="leading-8 font-light">授業内課題にて、「自分のプロフィールページを作成する」といった課題が課され、<br>
+                    この機会にプロフィールだけでなく、作品も掲載したポートフォリオサイトを作ろうと思ったから。
+                </p>
+            </section>
+            <section class="py-36">
+                <h1 class="text-xl font-semibold mb-6">制作における課題</h1>
+                <ul class="leading-8">
+                    <li>・課題の条件はプロフィールページの作成とCSSアニメーション、Alpine.js、tailwindCSSの使用。</li>
+                    <li>・自分を紹介し、自分らしさを表現できるサイトデザイン</li>
+                    <li>・作品の魅力を最大限伝えられるサイトデザイン</li>
+                    <li>・おしゃれなイメージのデザインにしたい</li>
+                </ul>
+            </section>
+            <section>
+                <h1 class="text-xl font-semibold mb-6">課題解決のためのリサーチ</h1>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">①リサーチ</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3"></li>
+                            <li class="mb-3">・他の人のポートフォリオサイトを調査</li>
+                            <li class="mb-3">・ポートフォリオサイトに掲載すべき内容を調査</li>
+                            <li class="mb-3">・自分らしいデザインについて思考</li>
+                            <li class="mb-3">・このサイトを見る人は誰なのか調査</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">②リサーチをもとに分析</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3">・ポートフォリオサイトはシンプルなものが多い</li>
+                            <li class="mb-3">・作品などのコンテンツに注目させるデザインが必要</li>
+                            <li class="mb-3">・自身の真面目な性格や、活発な部分を表したい</li>
+                            <li class="mb-3">・作品詳細ページでは作品をストーリーで見せると良く、細かい情報も多く載せると良い</li>
+                            <li class="mb-3">・ポートフォリオ全体は自身の紹介で、作品詳細ページは作品の紹介である</li>
+                            <li class="mb-3">・使用経験のある言語がわかりやすいと良い</li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border-4 border-gray-600 border-solid text-center p-6">
+                        <h1 class="mb-5 font-semibold">③行動</h1>
+                        <ul class="leading-6 text-left">
+                            <li class="mb-3">・モノクロを基調としたシンプルなデザイン</li>
+                            <li class="mb-3">・ポートフォリオ全体は角を意識し、商品詳細ページでは丸も使用</li>
+                            <li class="mb-3">・使用経験のある言語はグラフ表示</li>
+                            <li class="mb-3">・必要な情報へすぐ辿り着けるようにナビゲーションを設置</li>
+                            <li class="mb-3">・飽きさせないために要所要所にアニメーションを使用</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="">
+                <img src="images/136_arr_24.png" class="my-12 mx-auto transform rotate-90 h-16" alt="矢印">
+            </div>
+            <section class="grid grid-cols-2 gap-20 pb-48">
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー コンセプト ー</h1>
+                    <p class="text-3xl">私自身について、作品に取り組む姿勢、作品の工夫点を伝えられるポートフォリオサイト</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-xl font-semibold mb-6">ー ターゲット ー</h1>
+                    <p class="text-3xl">採用ご担当者様</p>
+                </div>
+            </section>
+            <section class="mb-40">
+                <div
+                    class="rounded-full border-gray-900 border-solid border text-sm py-3 mr-2 mb-12 font-semibold w-44">
+                    <h3 class="text-center font-semibold text-xl">作品の工夫点</h3>
+                </div>
+                <div class="px-24">
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/portfolio_image_1.png" class="object-cover w-full border-solid border border-gray-200" alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">①「私」を伝えるデザイン</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・ポートフォリオ全体のデザインは角を使ったデザインで自身の真面目な性格を表現</li>
+                                <li class="mb-1">・PortfolioのPを鮮やかなピンクにし、自身の活発で行動力のあるところを表現</li>
+                                <li class="mb-1">・ここでの写真は証明写真ではなく、素の私が伝わるようなプライペート写真を使用</li>
+                                <li class="mb-1">・作品詳細ページでは、柔軟なデザインができることをアピールする為に、角のない柔らかなデザインを使用</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-left">②見る人を意識したデザイン</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・必要な情報へ早く辿り着ける見やすくシンプルなデザイン</li>
+                                <li class="mb-1">・多くの就活生を見ていることを想定し、要所要所にアニメーションをつけて飽きないよう工夫した</li>
+                            </ul>
+                        </div>
+                        <img src="images/portfolio_image_2.png" class="object-cover w-full border-solid border border-gray-200" alt="写真">
+                    </div>
+                    <div class="grid grid-cols-2 gap-24 mb-24">
+                        <img src="images/portfolio_image_3.png" class="object-cover w-full border-solid border border-gray-200" alt="写真">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10">③直感でわかりやすい技術スキル一覧</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・直感でわかりやすいようにグラフ表示</li>
+                                <li class="mb-1">・グラフはAlpine.jsを使用し、入力数値に合わせグラフ幅が変更するようになっているため運用しやすい</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24">
+                        <div>
+                            <h1 class="text-xl font-semibold mb-10 text-left">④作品詳細ページはなるべく詳細に</h1>
+                            <ul class="text-lg text-left leading-8">
+                                <li class="mb-1">・詳細な情報をストーリー仕立てでわかりやすく紹介</li>
+                                <li class="mb-1">・実際のサイトへのリンクをヘッダーとフッターに用意し、より詳細に見ていただく工夫をした</li>
+                            </ul>
+                        </div>
+                        <img src="images/portfolio_image_4.png" class="object-cover w-full border-solid border border-gray-200" alt="写真">
+                    </div>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24 mb-48">
+                <div>
+                    <div
+                        class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">良かった点</h3>
+                    </div>
+                    <ul class="leading-7 text-lg text-left">
+                        <li class="mb-1">・課題のプロフィールページのみならず、これを機に求められる以上のポートフォリオを作成できたこと</li>
+                        <li class="mb-1">・リサーチにしっかり時間をかけられたこと</li>
+                        <li class="mb-1">・リサーチ結果を作品に落とし込み、活かすことができたこと</li>
+                        <li class="mb-1">・先生から課題における最高評価を頂けたこと</li>
+                        <li class="mb-1">・自分で満足できるクオリティのものを期限内に提出できたこと</li>
+                    </ul>
+                </div>
+                <div>
+                    <div
+                        class="rounded-full border-gray-900 border-solid border text-sm py-2 mr-2 mb-12 font-semibold w-44">
+                        <h3 class="text-center font-semibold text-lg">反省点</h3>
+                    </div>
+                    <ul class="leading-7 text-lg text-left">
+                        <li class="mb-2">・作品詳細ページ作成に予想よりも時間をかけてしまった</li>
+                        <li class="mb-2">・作品詳細情報が多いため、作品を追加する際にかなり時間がかかる</li>
+                        <li class="mb-2">・tailwindCSSのカスタマイズができない部分があった</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="px-24 grid grid-cols-2 gap-24">
+                <a href="https://sorauno.github.io/Portfolio/"
+                    class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">この作品のサイトへ移動</h3>
+                </a>
+                <a href="works.html"
+                    class="rounded-2xl border-gray-900 border-solid border-4 py-8 mr-2 mb-12 font-semibold shadow">
+                    <h3 class="text-center font-semibold text-3xl">作品一覧に戻る</h3>
+                </a>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <footer class="pb-24 font-thin w-full text-center"><small>&copy;2022 SoraUno</small></footer>
+</body>
+
+</html>
