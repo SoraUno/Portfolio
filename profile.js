@@ -77,6 +77,11 @@ Alpine.data("WorksData", () => ({
       img: "./images/kugenuma.jpg",
       url: "https://sorauno.github.io/hometown_introduction_site/",
     },
+    {
+      title: "ハル幼稚園　サイトデザイン",
+      img: "./images/preschool_site.jpg",
+      url: "https://sorauno.github.io/preschool_site/",
+    },
   ],
 }));
 
