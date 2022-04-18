@@ -79,7 +79,7 @@ Alpine.data("WorksData", () => ({
     },
     {
       title: "ハル幼稚園　サイトデザイン",
-      img: "./images/preschool_site.jpg",
+      img: "./images/preschool.png",
       url: "https://sorauno.github.io/preschool_site/",
     },
   ],
